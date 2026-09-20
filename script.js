@@ -192,56 +192,38 @@ function showSectionMessage(section, modal) {
 
 
     if (section === "recuerdos") {
-
         showMemories(card, modal);
-
         return;
-
     }
 
 
     if (section === "cartas") {
-
         showLettersMenu(card, modal);
-
         return;
-
     }
 
 
     if (section === "musica") {
-
         showMusic(card, modal);
-
         return;
-
     }
 
 
     if (section === "constelacion") {
-
         showConstellation(card, modal);
-
         return;
-
     }
 
 
     if (section === "yoongi") {
-
         showYoongiRoom(card, modal);
-
         return;
-
     }
 
 
     if (section === "secreto") {
-
         showSecret(card, modal);
-
         return;
-
     }
 
 }
@@ -479,134 +461,103 @@ const letters = {
 
     2: {
 
-        icon: "🌙",
+        icon: "🎀",
 
         title:
-            "Si pudiera volver atrás",
+            "Mi lugar favorito eres tú",
 
         text: `
 
-            Amor...
+            Mi niña...
 
             <br><br>
 
-            A veces pienso en lo extraño que es el
-            tiempo.
+            No sé en qué momento pasó, pero poco a
+            poquito te convertiste en uno de mis
+            lugares favoritos.
 
             <br><br>
 
-            En todas las decisiones, lugares,
-            coincidencias y momentos que tuvieron
-            que existir para que tú y yo termináramos
-            encontrándonos.
+            Y no hablo de un lugar al que pueda ir.
 
             <br><br>
 
-            Y si pudiera volver atrás...
+            Hablo de esa sensación de estar contigo
+            y sentir que puedo simplemente ser yo.
 
             <br><br>
 
-            no cambiaría nada.
+            Puedo estar cansada, de malas, hablando
+            de cualquier tontería o contando algo que
+            probablemente no tiene absolutamente nada
+            de sentido...
 
             <br><br>
 
-            Bueno...
-
-            quizá solamente iría a buscar a la Dennis
-            de antes de conocerte.
+            y aun así quiero contártelo a ti.
 
             <br><br>
 
-            La encontraría y le diría:
+            Porque contigo no siento que tenga que
+            pensar demasiado las cosas.
 
             <br><br>
 
-            <strong>
-            “Vas a conocer a una mujer que vas a amar
-            muchísimo.
-            <br><br>
-            No la sueltes.
-            <br><br>
-            Tómala de la mano.
-            <br><br>
-            Y no la sueltes nunca.”
-            </strong>
+            Me gusta poder ser Dennis contigo.
 
             <br><br>
 
-            Porque todavía me parece increíble pensar
-            que alguna vez tú fuiste alguien que yo
-            todavía no conocía.
+            La que se emociona por cualquier cosa.
 
             <br><br>
 
-            Y ahora eres una de esas personas que
-            aparecen en prácticamente todas las partes
-            de mi vida.
+            La que se ríe de cosas bien tontas.
 
             <br><br>
 
-            En mis canciones.
+            La que se queda viendo tu cara.
 
             <br><br>
 
-            En mi piano.
+            La que a veces no sabe qué decir y
+            termina diciendo cualquier cosa. JAJAJA.
 
             <br><br>
 
-            En las cosas que veo.
+            Y me encanta que tú conozcas todas
+            esas partes de mí.
 
             <br><br>
 
-            En los recuerdos.
+            Porque no solamente amo a la persona
+            que eres.
 
             <br><br>
 
-            En mis pensamientos más random.
+            También amo la persona que puedo ser
+            cuando estoy contigo.
 
             <br><br>
 
-            Y sí...
+            Así que si algún día me preguntas cuál
+            es mi lugar favorito...
 
             <br><br>
 
-            hasta en cosas que probablemente ni
-            siquiera deberían hacerme pensar en ti.
-            JAJAJA.
+            probablemente voy a hacerme la interesante
+            y decirte que depende.
 
             <br><br>
 
-            Supongo que así es cuando alguien termina
-            convirtiéndose en parte de tu historia.
+            Pero la verdad es mucho más sencilla.
 
             <br><br>
 
-            Y si pudiera vivir todos esos momentos
-            otra vez...
+            Mi lugar favorito es donde estés tú.
 
             <br><br>
 
-            te volvería a encontrar.
-
-            <br><br>
-
-            Una y otra vez.
-
-            <br><br>
-
-            En cualquier época.
-
-            <br><br>
-
-            En cualquier universo.
-
-            <br><br>
-
-            En cualquier línea del tiempo.
-
-            <br><br>
-
-            Siempre tú. ♡
+            Te amo, princesa. 💜
 
         `
 
@@ -615,207 +566,119 @@ const letters = {
 
     3: {
 
-        icon: "🎀",
+        icon: "💗",
 
         title:
-            "Lo que más me gusta de ti",
+            "Me gusta nuestra forma de querernos",
 
         text: `
 
-            Según yo...
+            Amor...
 
             <br><br>
 
-            lo que más me gusta de ti es una sola cosa.
+            Hay algo de nosotras que me gusta
+            muchísimo.
 
             <br><br>
 
-            Pero no.
+            La forma en la que podemos pasar de
+            estar hablando de algo súper serio a
+            terminar riéndonos por una estupidez.
 
             <br><br>
 
-            Lo que más me gusta de ti es que llegaste
-            a mi vida de una forma tan random que
-            todavía me da risa acordarme.
+            La forma en la que me cuentas tus cosas.
 
             <br><br>
 
-            Llegaste a la casa de Gael y, aunque parezca
-            una tontería, una de las primeras cosas que
-            noté fueron tus calcetas con la bandera gay.
+            La forma en la que yo te cuento las mías.
 
             <br><br>
 
-            JAJAJAJAJAJA.
+            La confianza que hemos ido construyendo.
 
             <br><br>
 
-            Pero mientras más te fui conociendo,
-            más me di cuenta de que no era una sola
-            cosa la que me gustaba de ti.
+            Y esos pequeños momentos en los que
+            simplemente sabemos que estamos bien.
 
             <br><br>
 
-            Me gusta cómo me haces sentir.
+            No necesito que todos nuestros días
+            sean perfectos.
 
             <br><br>
 
-            Porque contigo me siento cómoda,
-            tranquila y en paz.
+            No necesito que siempre sepamos qué hacer.
 
             <br><br>
 
-            Eres de esas personas con las que puedo
-            estar haciendo absolutamente nada y aun
-            así sentir que estoy en el mejor lugar
-            del mundo.
+            Me basta con saber que estamos aquí.
 
             <br><br>
 
-            Me gusta cuando me cuentas de One Piece,
-            de BTS, de Yoongi o de cualquier cosa que
-            te emocione.
+            Que seguimos eligiéndonos.
 
             <br><br>
 
-            Muchas veces ni siquiera entiendo todo,
-            pero me encanta escucharte porque se nota
-            lo feliz que te hace hablar de eso.
+            Que podemos hablar.
 
             <br><br>
 
-            Y verte feliz se ha vuelto en una de mis
-            cosas favoritas.
+            Que podemos reír.
 
             <br><br>
 
-            Me gusta tu risa.
+            Que podemos abrazarnos.
 
             <br><br>
 
-            Me gusta tu sonrisa.
+            Y que, incluso en los días raros,
+            seguimos teniendo ese pequeño lugar
+            al que podemos volver.
 
             <br><br>
 
-            Me gustan tus ojos.
+            Me gusta nuestro amor porque no se siente
+            como algo que tengo que demostrarle al
+            mundo.
 
             <br><br>
 
-            Me gusta tu voz.
+            Se siente como algo nuestro.
 
             <br><br>
 
-            De hecho, esto va a sonar medio loco,
-            y más viniendo de mí...
+            Algo que entiendo cuando te miro.
 
             <br><br>
 
-            pero prefiero escuchar tu voz que mi
-            canción favorita. 💗
+            Algo que siento cuando escucho tu voz.
 
             <br><br>
 
-            Me gustan esos momentos en los que nos
-            quedamos mirando y yo te digo:
+            Algo que aparece hasta en los momentos
+            más simples.
 
             <br><br>
 
-            <strong>“¿Qué?”</strong>
+            Y sí...
 
             <br><br>
 
-            Y tú:
+            me encanta quererte.
 
             <br><br>
 
-            <strong>“Nada.”</strong>
-
-            <br><br>
-
-            Y luego las dos terminamos riéndonos.
-
-            <br><br>
-
-            JAJAJAJAJAJA.
-
-            <br><br>
-
-            Me encantan tus abrazos y tus besos.
-
-            <br><br>
-
-            Me encanta cuando me agarras de la cintura
-            y haces que se me olvide cómo funciona
-            mi cerebro. 💭🧃
-
-            <br><br>
-
-            También me encanta verte haciendo cosplay.
-
-            <br><br>
-
-            Y nunca es suficiente, pero de verdad soy
-            tu fan número uno.
-
-            <br><br>
-
-            Y si soy completamente sincera...
-
-            <br><br>
-
-            creo que lo que más me gusta de ti es que
-            ahora estás en todas las partes del libro
-            de mi vida.
-
-            <br><br>
-
-            Cada canción romántica me recuerda a ti.
-
-            <br><br>
-
-            Cada vez que escucho algo de BTS pienso
-            en ti.
-
-            <br><br>
-
-            Cada vez que veo algo de One Piece pienso
-            en ti.
-
-            <br><br>
-
-            Cada vez que me siento frente al piano
-            pienso en ti.
-
-            <br><br>
-
-            Y por eso...
-
-            <br><br>
-
-            quizá sí.
-
-            <br><br>
-
-            Lo que más me gusta de ti...
-
-            <br><br>
-
-            es todo todito. 💗
-
-            <br><br>
-
-            Porque incluso después de todo este tiempo,
-            todavía te veo y pienso:
+            Pero todavía más me encanta que seas tú
+            la persona a la que puedo llamar:
 
             <br><br>
 
             <strong>
-            “Wow... sí que me gusta mucho esta niña.”
+            mi niña. 💗
             </strong>
-
-            <br><br>
-
-            ♡
 
         `
 
@@ -824,94 +687,118 @@ const letters = {
 
     4: {
 
-        icon: "🎹",
+        icon: "🪐",
 
         title:
-            "Mi piano ya te conoce",
+            "Si algún día dudas de cuánto te amo",
 
         text: `
 
-            Amor...
+            Princesa...
 
             <br><br>
 
-            Te dedico mi piano.
+            Si algún día por cualquier razón dudas
+            de cuánto te amo, quiero que recuerdes
+            algo.
 
             <br><br>
 
-            Te dedico esa sensación de paz,
-            tranquilidad y felicidad que siento
-            cada vez que lo toco.
+            No te amo solamente cuando estamos
+            felices.
 
             <br><br>
 
-            Ese momento en el que todo parece
-            desaparecer y solo quedamos yo,
-            las teclas y la música.
+            No te amo solamente cuando todo sale
+            bien.
 
             <br><br>
 
-            También te dedico ese sentimiento raro
-            que sentí la primera vez que conocí un piano.
+            Te amo en las conversaciones largas.
 
             <br><br>
 
-            Me daba hasta pena acercarme.
+            En los silencios.
 
             <br><br>
 
-            Qué raro, ¿no?
+            En las risas que no tienen sentido.
 
             <br><br>
 
-            Pero míranos ahora.
+            En los días cansados.
 
             <br><br>
 
-            Ahora no existe Dennis sin piano.
+            En los momentos en los que solamente
+            quiero tenerte cerquita.
 
             <br><br>
 
-            Y creo que, de alguna forma, tampoco
-            quiero que exista un futuro en el que
-            tú no estés.
+            Te amo cuando me cuentas algo que te
+            emociona y podría escucharte durante
+            horas.
 
             <br><br>
 
-            Porque hay cosas que llegan a nuestra
-            vida y terminan convirtiéndose en una
-            parte de nosotros.
+            Te amo cuando haces alguna de tus
+            pequeñas locuras.
 
             <br><br>
 
-            El piano fue una de ellas.
+            Te amo cuando te emocionas.
 
             <br><br>
 
-            Y tú también.
+            Te amo cuando estás siendo tú.
 
             <br><br>
 
-            Mi piano ya te conoce, ¿sabes por qué?
+            Y probablemente eso es lo que más quiero
+            que recuerdes.
 
             <br><br>
 
-            Porque cada nota bonita que toco lleva
-            un poquito de mi inspiración.
+            No tienes que convertirte en otra persona
+            para que yo te ame.
 
             <br><br>
 
-            Y mi inspiración eres tú. 💗
+            No tienes que ser perfecta.
 
             <br><br>
 
-            Así que cada vez que escuches una melodía
-            que salga de esas teclas...
+            No tienes que tener siempre la respuesta.
 
             <br><br>
 
-            quizá haya un pedacito de ti escondido
-            entre las notas.
+            Solo tienes que ser tú.
+
+            <br><br>
+
+            Porque esa fue la persona de la que me
+            enamoré.
+
+            <br><br>
+
+            Y esa es la persona que sigo eligiendo.
+
+            <br><br>
+
+            Te amo muchísimo, mi niña.
+
+            <br><br>
+
+            Más de lo que probablemente sé explicar
+            sin ponerme cursi. JAJAJA.
+
+            <br><br>
+
+            Aunque bueno...
+
+            <br><br>
+
+            contigo sí me permito ser cursi. 🎀💜
 
         `
 
@@ -920,95 +807,114 @@ const letters = {
 
     5: {
 
-        icon: "🪐",
+        icon: "🌙",
 
         title:
-            "En cualquier universo",
+            "Quiero seguir haciendo recuerdos contigo",
 
         text: `
 
-            De todas las canciones que puedo dedicarte,
+            Mi niña...
 
             <br><br>
 
-            de todas las películas que puedo compartir
-            contigo,
+            Hay recuerdos que ya tenemos y que amo
+            muchísimo.
 
             <br><br>
 
-            de todos los lugares a los que podría viajar,
+            Pero ¿sabes qué es lo que más me emociona?
 
             <br><br>
 
-            de todos los años a los que podría volver,
+            Todos los que todavía nos faltan.
 
             <br><br>
 
-            de todas las cosas que amo...
+            Quiero más días contigo.
 
             <br><br>
 
-            tú eres la única que no quiero solamente
-            dedicar.
+            Más canciones que después podamos decir
+            “esta es nuestra”.
 
             <br><br>
 
-            Tú eres la que quiero vivir.
+            Más fotografías feas que aun así nos
+            parezcan preciosas.
 
             <br><br>
 
-            Y si pudiera viajar en el tiempo,
-            te buscaría en todos ellos.
+            Más salidas.
 
             <br><br>
 
-            Si pudiera elegir una canción,
-            elegiría todas las que me recuerdan a ti.
+            Más abrazos.
 
             <br><br>
 
-            Si pudiera elegir una pelea,
-            elegiría todas las que tuviera que luchar
-            para no perderte.
+            Más besos.
 
             <br><br>
 
-            Y si pudiera elegir una vida...
+            Más momentos de quedarnos mirando sin
+            saber qué decir.
 
             <br><br>
 
-            te elegiría a ti.
+            Más conversaciones que empiezan hablando
+            de cualquier tontería y terminan siendo
+            importantes.
 
             <br><br>
 
-            Una y otra vez.
+            Quiero conocer todavía más versiones
+            de ti.
 
             <br><br>
 
-            En cualquier época.
+            Ver cómo cambias.
 
             <br><br>
 
-            En cualquier universo.
+            Ver cómo creces.
 
             <br><br>
 
-            En cualquier línea del tiempo.
+            Estar ahí cuando cumplas cosas que hoy
+            todavía parecen lejanas.
 
             <br><br>
 
-            Siempre tú.
+            Y también quiero que tú estés cuando yo
+            consiga las mías.
+
+            <br><br>
+
+            Quiero que algún día podamos mirar atrás
+            y decir:
 
             <br><br>
 
             <strong>
-            Te amo a través de todas las cosas
-            que me hacen ser yo.
+            “Mira todo lo que vivimos juntas.”
             </strong>
 
             <br><br>
 
-            ♡
+            Porque este universo está bonito...
+
+            <br><br>
+
+            pero todavía le faltan muchísimas historias.
+
+            <br><br>
+
+            Y quiero escribirlas contigo.
+
+            <br><br>
+
+            Te amo, princesa. 🪐💜
 
         `
 
@@ -1017,83 +923,97 @@ const letters = {
 
     6: {
 
-        icon: "💗",
+        icon: "🫶🏻",
 
         title:
-            "Para cuando tengas un día feo",
+            "Para mi niña, siempre",
 
         text: `
 
-            Mi niña,
+            Si algún día vuelves a abrir esta carta,
+            quiero que por un momento dejes todo lo
+            demás a un lado.
 
             <br><br>
 
-            si estás leyendo esto porque hoy no fue
-            un buen día, ven tantito.
+            Solo tú.
 
             <br><br>
 
-            No tienes que arreglar todo ahora.
+            Y quiero que recuerdes que hay una persona
+            que te mira y piensa:
 
             <br><br>
 
-            No tienes que estar bien todo el tiempo.
+            <strong>
+            “Qué suerte tengo de que seas tú.”
+            </strong>
 
             <br><br>
 
-            Y tampoco tienes que explicarme
-            perfectamente qué sientes.
+            Porque entre tantas personas, tantas
+            historias y tantos caminos diferentes...
 
             <br><br>
 
-            Solo quiero recordarte que estás
-            acompañada.
+            coincidimos.
 
             <br><br>
 
-            Que hay alguien aquí que te ama.
+            Y yo no pienso tomar eso como algo
+            pequeño.
 
             <br><br>
 
-            Alguien que disfruta escucharte hablar
-            de las cosas que te emocionan.
+            Gracias por estar.
 
             <br><br>
 
-            Alguien que ama tu risa.
+            Gracias por dejarme conocerte.
 
             <br><br>
 
-            Tu voz.
+            Gracias por contarme tus cosas.
 
             <br><br>
 
-            Tus abrazos.
+            Gracias por escuchar las mías.
 
             <br><br>
 
-            Tus tonterías.
+            Gracias por cada abrazo.
 
             <br><br>
 
-            Y hasta esas pequeñas cosas que quizá
-            tú ni siquiera notas.
+            Por cada beso.
 
             <br><br>
 
-            Así que respira.
+            Por cada risa.
 
             <br><br>
 
-            Descansa un poquito.
+            Por cada momento en el que simplemente
+            estuvimos juntas.
 
             <br><br>
 
-            Y recuerda:
+            Tal vez no siempre sepa decir todo lo que
+            siento de la manera más bonita.
 
             <br><br>
 
-            no tienes que poder con todo tú sola.
+            A veces hasta me hago la fría. JAJAJA.
+
+            <br><br>
+
+            Pero quiero que sepas algo:
+
+            <br><br>
+
+            <strong>
+            te amo.
+            </strong>
 
             <br><br>
 
@@ -1101,7 +1021,32 @@ const letters = {
 
             <br><br>
 
-            Y aquí estoy. 💜
+            Te amo, princesa.
+
+            <br><br>
+
+            Y entre todos los universos que podrían
+            existir...
+
+            <br><br>
+
+            me sigue gustando muchísimo el nuestro.
+
+            <br><br>
+
+            Porque estás tú.
+
+            <br><br>
+
+            Y mientras estés tú...
+
+            <br><br>
+
+            yo quiero seguir aquí.
+
+            <br><br>
+
+            ♡
 
         `
 
