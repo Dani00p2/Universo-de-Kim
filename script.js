@@ -1,6 +1,6 @@
 /* =========================================
    UNIVERSO DE KIM
-   Sistema de interacciones
+   Sistema principal de interacciones
 ========================================= */
 
 
@@ -14,383 +14,108 @@ function enterUniverse() {
     document.body.style.opacity = "0";
 
     setTimeout(() => {
+
         window.location.href = "universo.html";
+
     }, 1000);
 
 }
 
 
 /* =========================================
-   INFORMACIÓN DE LAS SECCIONES
+   CONTENIDO DE LAS SECCIONES
 ========================================= */
 
 const sections = {
 
     recuerdos: {
+
         icon: "⭐",
+
         title: "Nuestros recuerdos",
-        text: "Cada momento contigo merece su propio lugar entre las estrellas.",
+
+        text:
+            "Hay momentos que quizá parecían pequeños cuando sucedieron, pero que ahora forman parte de mi universo favorito: el que comparto contigo.",
+
         color: "#b9a7ff"
+
     },
+
 
     cartas: {
+
         icon: "💌",
-        title: "Cartitas para ti",
-        text: "Pequeñas palabras que quizá no siempre sé decirte en persona, pero que quería dejar flotando por aquí.",
+
+        title: "Cartitas para mi niña",
+
+        text:
+            "Porque decirte solamente que te amo se me hizo demasiado básico. Así que hice un universo entero para compensarlo, obvio. 🎀💜",
+
         color: "#d6bfff"
+
     },
+
 
     musica: {
+
         icon: "🎵",
+
         title: "Nuestra música",
-        text: "Canciones que me hacen pensar en ti, momentos que tienen sonido y melodías que ahora también forman parte de nuestro universo.",
+
+        text:
+            "Canciones, melodías y momentos que tienen una manera muy extraña de hacerme pensar en ti.",
+
         color: "#91b5ff"
+
     },
+
 
     constelacion: {
+
         icon: "✦",
+
         title: "Nuestra constelación",
-        text: "Una colección de momentos, fechas y pequeñas cosas que, juntas, terminaron formando nuestra propia constelación.",
+
+        text:
+            "Cada estrella guarda algo. Una fecha, una memoria, una palabra o simplemente una razón por la que me alegra que estés aquí.",
+
         color: "#c4b5ff"
+
     },
+
 
     yoongi: {
+
         icon: "🐈‍⬛",
+
         title: "Yoongi's Room",
-        text: "Un pequeño rincón ficticio inspirado en la personalidad pública de Yoongi. No representa al artista real ni pretende hablar en su nombre. Solo es una pequeña parte de este universo creada para ti.",
+
+        text:
+            "Un pequeño espacio ficticio inspirado en la personalidad pública de Yoongi. No representa al artista real ni pretende hablar en su nombre. Solo es una parte especial de este universo creada para ti.",
+
         color: "#9faeff"
+
     },
 
+
     secreto: {
+
         icon: "🔐",
+
         title: "Zona secreta",
-        text: "Hay lugares del universo que no aparecen hasta que sabes exactamente dónde mirar...",
+
+        text:
+            "Este lugar todavía no debería aparecer tan fácilmente. Algunas cosas bonitas están hechas para descubrirse.",
+
         color: "#a98cff"
+
     }
 
 };
 
 
 /* =========================================
-   CREAR ESTILOS DEL MODAL
-========================================= */
-
-const modalStyles = document.createElement("style");
-
-modalStyles.textContent = `
-
-    .universe-modal {
-
-        position: fixed;
-        inset: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        padding: 25px;
-
-        background: rgba(1, 2, 12, .78);
-
-        backdrop-filter: blur(14px);
-
-        opacity: 0;
-
-        visibility: hidden;
-
-        transition:
-            opacity .45s ease,
-            visibility .45s ease;
-
-        z-index: 9999;
-
-    }
-
-
-    .universe-modal.active {
-
-        opacity: 1;
-
-        visibility: visible;
-
-    }
-
-
-    .modal-card {
-
-        position: relative;
-
-        width: min(500px, 92vw);
-
-        padding: 45px 30px 35px;
-
-        border-radius: 28px;
-
-        text-align: center;
-
-        background:
-            linear-gradient(
-                145deg,
-                rgba(35, 27, 75, .94),
-                rgba(7, 9, 27, .97)
-            );
-
-        border: 1px solid rgba(190, 170, 255, .35);
-
-        box-shadow:
-            0 0 35px rgba(130, 100, 255, .25),
-            0 0 100px rgba(70, 60, 180, .12),
-            inset 0 0 30px rgba(255,255,255,.03);
-
-        transform:
-            translateY(30px)
-            scale(.94);
-
-        transition:
-            transform .5s cubic-bezier(.2,.8,.2,1);
-
-        overflow: hidden;
-
-    }
-
-
-    .universe-modal.active .modal-card {
-
-        transform:
-            translateY(0)
-            scale(1);
-
-    }
-
-
-    .modal-card::before {
-
-        content: "";
-
-        position: absolute;
-
-        width: 180px;
-        height: 180px;
-
-        top: -90px;
-        left: 50%;
-
-        transform: translateX(-50%);
-
-        border-radius: 50%;
-
-        background: var(--modal-color);
-
-        filter: blur(70px);
-
-        opacity: .18;
-
-        pointer-events: none;
-
-    }
-
-
-    .modal-icon {
-
-        position: relative;
-
-        font-size: 58px;
-
-        margin-bottom: 18px;
-
-        display: block;
-
-        filter:
-            drop-shadow(
-                0 0 15px var(--modal-color)
-            );
-
-        animation: modalFloat 3s ease-in-out infinite;
-
-    }
-
-
-    .modal-title {
-
-        position: relative;
-
-        margin-bottom: 15px;
-
-        font-size: clamp(26px, 7vw, 38px);
-
-        letter-spacing: 1px;
-
-        background:
-            linear-gradient(
-                90deg,
-                #ffffff,
-                var(--modal-color),
-                #ffffff
-            );
-
-        background-size: 200%;
-
-        -webkit-background-clip: text;
-
-        background-clip: text;
-
-        color: transparent;
-
-        animation: modalShine 5s linear infinite;
-
-    }
-
-
-    .modal-text {
-
-        position: relative;
-
-        max-width: 410px;
-
-        margin: auto;
-
-        color: #c5c1d8;
-
-        font-size: 14px;
-
-        line-height: 1.8;
-
-    }
-
-
-    .modal-close {
-
-        position: absolute;
-
-        top: 15px;
-        right: 18px;
-
-        width: 38px;
-        height: 38px;
-
-        border-radius: 50%;
-
-        border: 1px solid rgba(210,200,255,.2);
-
-        background: rgba(255,255,255,.05);
-
-        color: white;
-
-        font-size: 20px;
-
-        cursor: pointer;
-
-        transition: .3s ease;
-
-    }
-
-
-    .modal-close:hover {
-
-        transform: rotate(90deg) scale(1.1);
-
-        background: rgba(170,140,255,.2);
-
-        box-shadow:
-            0 0 20px rgba(160,130,255,.35);
-
-    }
-
-
-    .modal-orbit {
-
-        position: absolute;
-
-        width: 280px;
-        height: 280px;
-
-        left: 50%;
-        top: 50%;
-
-        transform: translate(-50%, -50%);
-
-        border:
-
-            1px solid
-            rgba(190,170,255,.08);
-
-        border-radius: 50%;
-
-        pointer-events: none;
-
-    }
-
-
-    @keyframes modalFloat {
-
-        0%, 100% {
-
-            transform: translateY(0);
-
-        }
-
-        50% {
-
-            transform: translateY(-8px);
-
-        }
-
-    }
-
-
-    @keyframes modalShine {
-
-        from {
-
-            background-position: 0%;
-
-        }
-
-        to {
-
-            background-position: 200%;
-
-        }
-
-    }
-
-
-    @media (max-width: 600px) {
-
-        .modal-card {
-
-            padding:
-                40px
-                22px
-                30px;
-
-            border-radius: 24px;
-
-        }
-
-
-        .modal-icon {
-
-            font-size: 48px;
-
-        }
-
-
-        .modal-text {
-
-            font-size: 13px;
-
-        }
-
-    }
-
-`;
-
-document.head.appendChild(modalStyles);
-
-
-/* =========================================
-   ABRIR SECCIÓN
+   ABRIR UNA SECCIÓN
 ========================================= */
 
 function openSection(section) {
@@ -399,24 +124,29 @@ function openSection(section) {
 
     if (!data) {
 
-        console.log("Sección no encontrada:", section);
+        console.log(
+            "Sección no encontrada:",
+            section
+        );
 
         return;
 
     }
 
 
-    /* Crear modal */
+    const modal =
+        document.createElement("div");
 
-    const modal = document.createElement("div");
 
-    modal.className = "universe-modal";
+    modal.className =
+        "universe-modal";
+
 
     modal.innerHTML = `
 
         <div
             class="modal-card"
-            style="--modal-color: ${data.color}"
+            style="--modal-color:${data.color}"
         >
 
             <div class="modal-orbit"></div>
@@ -440,6 +170,13 @@ function openSection(section) {
                 ${data.text}
             </p>
 
+            <button
+                class="enter-section"
+                data-section="${section}"
+            >
+                Entrar ✨
+            </button>
+
         </div>
 
     `;
@@ -460,7 +197,9 @@ function openSection(section) {
     /* Botón cerrar */
 
     const closeButton =
-        modal.querySelector(".modal-close");
+        modal.querySelector(
+            ".modal-close"
+        );
 
 
     closeButton.addEventListener(
@@ -473,13 +212,36 @@ function openSection(section) {
 
     modal.addEventListener(
         "click",
-        (event) => {
+        event => {
 
-            if (event.target === modal) {
+            if (
+                event.target === modal
+            ) {
 
                 closeModal(modal);
 
             }
+
+        }
+    );
+
+
+    /* Botón entrar */
+
+    const enterButton =
+        modal.querySelector(
+            ".enter-section"
+        );
+
+
+    enterButton.addEventListener(
+        "click",
+        () => {
+
+            showSectionMessage(
+                section,
+                modal
+            );
 
         }
     );
@@ -491,7 +253,9 @@ function openSection(section) {
         "keydown",
         function escapeHandler(event) {
 
-            if (event.key === "Escape") {
+            if (
+                event.key === "Escape"
+            ) {
 
                 closeModal(modal);
 
@@ -509,12 +273,363 @@ function openSection(section) {
 
 
 /* =========================================
+   MOSTRAR CONTENIDO DE LA SECCIÓN
+========================================= */
+
+function showSectionMessage(
+    section,
+    modal
+) {
+
+    const card =
+        modal.querySelector(
+            ".modal-card"
+        );
+
+
+    const data =
+        sections[section];
+
+
+    /* =====================================
+       CARTAS
+    ===================================== */
+
+    if (section === "cartas") {
+
+        card.innerHTML = `
+
+            <button
+                class="modal-close"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+            <span class="modal-icon">
+                💌
+            </span>
+
+            <h2 class="modal-title">
+                Para mi niña
+            </h2>
+
+            <p class="modal-text">
+
+                Mi niña, no sé si alguna vez voy
+                a encontrar suficientes palabras
+                para explicarte todo lo que
+                significas para mí.
+
+                <br><br>
+
+                Pero sí sé algo:
+
+                <br><br>
+
+                Te amo muchísimo.
+
+                <br><br>
+
+                Amo tenerte en mi vida, amo
+                nuestros momentos, nuestras
+                tonterías y hasta esas pequeñas
+                cosas que probablemente tú ni
+                notas, pero que yo guardo con
+                muchísimo cariño.
+
+                <br><br>
+
+                Y si hice todo este universo
+                para ti, es porque una simple
+                cartita claramente no me parecía
+                suficiente. 🎀💜
+
+            </p>
+
+            <button
+                class="enter-section"
+                onclick="nextLetter(this)"
+            >
+                Una última, princesa 💌
+            </button>
+
+        `;
+
+    }
+
+
+    /* =====================================
+       DEMÁS SECCIONES
+    ===================================== */
+
+    else {
+
+        card.innerHTML = `
+
+            <button
+                class="modal-close"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+            <span class="modal-icon">
+                ${data.icon}
+            </span>
+
+            <h2 class="modal-title">
+                ${data.title}
+            </h2>
+
+            <p class="modal-text">
+
+                Esta parte de mi universo
+                todavía está tomando forma.
+
+                <br><br>
+
+                Pero no te preocupes,
+                princesa.
+
+                <br><br>
+
+                La estoy construyendo poquito
+                a poquito para que cuando esté
+                lista sea todavía más bonita
+                para ti. ✨💜
+
+            </p>
+
+        `;
+
+    }
+
+
+    /* Botón cerrar */
+
+    card.querySelector(
+        ".modal-close"
+    ).addEventListener(
+        "click",
+        () => closeModal(modal)
+    );
+
+}
+
+
+/* =========================================
+   SEGUNDA CARTA
+========================================= */
+
+function nextLetter(button) {
+
+    const card =
+        button.closest(
+            ".modal-card"
+        );
+
+
+    card.innerHTML = `
+
+        <button
+            class="modal-close"
+            aria-label="Cerrar"
+        >
+            ×
+        </button>
+
+        <span class="modal-icon">
+            🌙
+        </span>
+
+        <h2 class="modal-title">
+            Para mi princesa
+        </h2>
+
+        <p class="modal-text">
+
+            Mi niña, no sé si alguna vez voy
+            a encontrar suficientes palabras
+            para explicarte todo lo que
+            siento por ti.
+
+            <br><br>
+
+            Pero sí sé que te amo muchísimo.
+
+            <br><br>
+
+            Amo tenerte en mi vida, amo
+            nuestros momentos, nuestras
+            tonterías y esas pequeñas cosas
+            que probablemente tú ni notas,
+            pero que yo guardo con muchísimo
+            cariño.
+
+            <br><br>
+
+            Y aunque a veces no sea la persona
+            más cariñosa del planeta, quiero
+            que sepas que contigo siento
+            muchísimo.
+
+            <br><br>
+
+            Eres mi niña, mi princesa y una
+            de las personas más especiales
+            que tengo en mi vida. 🎀💜
+
+        </p>
+
+        <button
+            class="enter-section"
+            onclick="finalLetter(this)"
+        >
+            Una última, princesa 💌
+        </button>
+
+    `;
+
+
+    card.querySelector(
+        ".modal-close"
+    ).addEventListener(
+        "click",
+        () => {
+
+            const modal =
+                card.closest(
+                    ".universe-modal"
+                );
+
+            closeModal(modal);
+
+        }
+    );
+
+}
+
+
+/* =========================================
+   CARTA FINAL
+========================================= */
+
+function finalLetter(button) {
+
+    const card =
+        button.closest(
+            ".modal-card"
+        );
+
+
+    card.innerHTML = `
+
+        <button
+            class="modal-close"
+            aria-label="Cerrar"
+        >
+            ×
+        </button>
+
+        <span class="modal-icon">
+            🪐
+        </span>
+
+        <h2 class="modal-title">
+            Mi lugar favorito
+        </h2>
+
+        <p class="modal-text">
+
+            Mi princesa,
+
+            <br><br>
+
+            Entre todos los planetas, estrellas
+            y universos que podrían existir,
+            qué bonito que mi vida haya
+            coincidido con la tuya.
+
+            <br><br>
+
+            Eres mi niña, mi personita especial
+            y una de las partes más bonitas
+            de mi vida.
+
+            <br><br>
+
+            No hice este universo porque
+            pudiera explicar perfectamente
+            todo lo que siento por ti.
+
+            <br><br>
+
+            Lo hice porque a veces siento
+            tanto que decir simplemente
+            "te amo" se queda cortito.
+
+            <br><br>
+
+            Así que aquí tienes un universo
+            entero, princesa. 🌌💜
+
+            <br><br>
+
+            Te amo muchísimo, mi niña.
+
+            <br><br>
+
+            Siempre tú. 🪐🎀
+
+        </p>
+
+        <div
+            style="
+                margin-top:25px;
+                font-size:11px;
+                letter-spacing:3px;
+                color:#aaa0e9;
+            "
+        >
+            PARA MI NIÑA ✦
+        </div>
+
+    `;
+
+
+    card.querySelector(
+        ".modal-close"
+    ).addEventListener(
+        "click",
+        () => {
+
+            const modal =
+                card.closest(
+                    ".universe-modal"
+                );
+
+            closeModal(modal);
+
+        }
+    );
+
+}
+
+
+/* =========================================
    CERRAR MODAL
 ========================================= */
 
 function closeModal(modal) {
 
-    modal.classList.remove("active");
+    if (!modal) return;
+
+
+    modal.classList.remove(
+        "active"
+    );
+
 
     setTimeout(() => {
 
@@ -523,3 +638,68 @@ function closeModal(modal) {
     }, 500);
 
 }
+
+
+/* =========================================
+   ESTILOS DE LOS BOTONES INTERNOS
+========================================= */
+
+const extraStyles =
+    document.createElement("style");
+
+
+extraStyles.textContent = `
+
+    .enter-section {
+
+        margin-top: 25px;
+
+        padding: 12px 25px;
+
+        border-radius: 30px;
+
+        border:
+            1px solid
+            rgba(205,190,255,.4);
+
+        background:
+            rgba(130,100,220,.18);
+
+        color: white;
+
+        cursor: pointer;
+
+        font-size: 13px;
+
+        transition: .3s ease;
+
+    }
+
+
+    .enter-section:hover {
+
+        transform:
+            scale(1.07);
+
+        background:
+            rgba(145,115,240,.32);
+
+        box-shadow:
+            0 0 25px
+            rgba(150,120,255,.4);
+
+    }
+
+
+    .enter-section:active {
+
+        transform:
+            scale(.95);
+
+    }
+
+`;
+
+document.head.appendChild(
+    extraStyles
+);
