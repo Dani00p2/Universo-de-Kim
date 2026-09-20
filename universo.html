@@ -1,93 +1,279 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Mi Universo 💜</title>
 
-    <link rel="stylesheet" href="universo.css">
+    <link
+        rel="stylesheet"
+        href="universo.css"
+    >
+
 </head>
+
 
 <body>
 
-    <!-- Fondo espacial -->
+
+    <!-- =====================================
+         FONDO DEL UNIVERSO
+    ====================================== -->
+
     <div class="space"></div>
 
     <div class="nebula nebula-one"></div>
+
     <div class="nebula nebula-two"></div>
 
-    <!-- Estrellas -->
+
+    <!-- =====================================
+         ESTRELLAS
+    ====================================== -->
+
     <div class="stars"></div>
+
     <div class="stars stars-two"></div>
 
-    <!-- Planeta central -->
+
+    <!-- =====================================
+         ESTRELLAS EXTRA
+    ====================================== -->
+
+    <div class="floating-stars">
+
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>·</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>·</span>
+        <span>✧</span>
+        <span>·</span>
+        <span>✦</span>
+
+    </div>
+
+
+    <!-- =====================================
+         COMETAS
+    ====================================== -->
+
+    <div class="comet comet-one"></div>
+
+    <div class="comet comet-two"></div>
+
+
+    <!-- =====================================
+         SATURNO CENTRAL
+    ====================================== -->
+
     <div class="planet-system">
 
         <div class="planet-glow"></div>
 
+
         <div class="saturn">
+
             <div class="saturn-body"></div>
+
             <div class="saturn-ring ring-back"></div>
+
             <div class="saturn-ring ring-front"></div>
+
         </div>
 
     </div>
 
-    <!-- Título -->
+
+    <!-- =====================================
+         TÍTULO
+    ====================================== -->
+
     <section class="universe-title">
 
-        <p>BIENVENIDA A</p>
+        <p>
+            BIENVENIDA A
+        </p>
 
-        <h1>MI UNIVERSO</h1>
 
-        <span>hecho un poquito más bonito porque estás tú 💜</span>
+        <h1>
+            MI UNIVERSO
+        </h1>
+
+
+        <span>
+            hecho un poquito más bonito porque estás tú 💜
+        </span>
 
     </section>
 
-    <!-- Menú orbital -->
+
+    <!-- =====================================
+         MENÚ ORBITAL
+    ====================================== -->
+
     <section class="orbit-menu">
 
-        <button class="planet-button memories" onclick="openSection('recuerdos')">
+
+        <button
+            class="planet-button memories"
+            onclick="openSection('recuerdos')"
+            aria-label="Abrir recuerdos"
+        >
+
             ⭐
-            <small>Recuerdos</small>
+
+            <small>
+                Recuerdos
+            </small>
+
         </button>
 
-        <button class="planet-button letters" onclick="openSection('cartas')">
+
+
+        <button
+            class="planet-button letters"
+            onclick="openSection('cartas')"
+            aria-label="Abrir cartas"
+        >
+
             💌
-            <small>Cartas</small>
+
+            <small>
+                Cartas
+            </small>
+
         </button>
 
-        <button class="planet-button music" onclick="openSection('musica')">
+
+
+        <button
+            class="planet-button music"
+            onclick="openSection('musica')"
+            aria-label="Abrir música"
+        >
+
             🎵
-            <small>Música</small>
+
+            <small>
+                Música
+            </small>
+
         </button>
 
-        <button class="planet-button constellation" onclick="openSection('constelacion')">
+
+
+        <button
+            class="planet-button constellation"
+            onclick="openSection('constelacion')"
+            aria-label="Abrir constelación"
+        >
+
             ✦
-            <small>Constelación</small>
+
+            <small>
+                Constelación
+            </small>
+
         </button>
 
-        <button class="planet-button yoongi" onclick="openSection('yoongi')">
+
+
+        <button
+            class="planet-button yoongi"
+            onclick="openSection('yoongi')"
+            aria-label="Abrir Yoongi's Room"
+        >
+
             🐈‍⬛
-            <small>Yoongi's Room</small>
+
+            <small>
+                Yoongi's Room
+            </small>
+
         </button>
 
-        <button class="planet-button secret" onclick="openSection('secreto')">
+
+
+        <button
+            class="planet-button secret"
+            onclick="openSection('secreto')"
+            aria-label="Abrir zona secreta"
+        >
+
             🔐
-            <small>Secreto</small>
+
+            <small>
+                Secreto
+            </small>
+
         </button>
+
 
     </section>
 
-    <!-- Frase inferior -->
+
+    <!-- =====================================
+         MENSAJE INFERIOR
+    ====================================== -->
+
     <div class="bottom-message">
-        <span>✦</span>
-        <p>De todos los universos posibles, me alegra coincidir contigo.</p>
-        <span>✦</span>
+
+        <span>
+            ✦
+        </span>
+
+
+        <p>
+            De todos los universos posibles,
+            me alegra coincidir contigo.
+        </p>
+
+
+        <span>
+            ✦
+        </span>
+
     </div>
+
+
+    <!-- =====================================
+         INDICADOR
+    ====================================== -->
+
+    <div class="touch-hint">
+
+        <span>
+            ✦
+        </span>
+
+        explora tu universo
+
+        <span>
+            ✦
+        </span>
+
+    </div>
+
+
+    <!-- =====================================
+         SCRIPT
+    ====================================== -->
 
     <script src="script.js"></script>
 
+
 </body>
+
 </html>
