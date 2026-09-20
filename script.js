@@ -4595,4 +4595,5 @@ extraStyles.textContent = `
 
 
 document.head.appendChild(extraStyles);
-    padding-right: 8px;
+
+console.log("UNIVERSO DE KIM: JavaScript cargado correctamente 💜");
